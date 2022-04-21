@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled, { ThemeProvider } from "styled-components";
-import { Link } from 'react-router-dom';
 import { theme } from "../theme";
 import { about, technologies } from './content';
 import ContactApps from '../components/ContactApps'
@@ -19,7 +18,8 @@ const Homepage = () => {
       <ThemeProvider theme={theme}>
         <StyledHome>
           <Banner>
-            <img className="main__image" src="./images/withbook.jpg" />
+            <img className="main__image" src="./images/man.jpg" />
+            <img className="banner__title" src="./images/port.png" />
             <Logo>
               <h2 className="logo__title">gfouz</h2>
               <SpyGlass color="#ffffff" size="1.5em" />
@@ -33,8 +33,8 @@ const Homepage = () => {
               <h3 className="about__title">A little about me</h3>
               <p className="about__paragraph">{about}</p>
             </Article>
-            <Figure>
-              <img className="about__image" src="./images/pallete.jpg" />
+            <Figure imagePercentage="50%">
+              <img  src="./images/pallete.jpg" />
               <h4 className="about__image-title">styled-components</h4>
             </Figure>
           </Section>
@@ -59,8 +59,13 @@ const Homepage = () => {
               <img className="technical__image" src="./images/freelancer.jpg" />
             </Figure>
           </Section>
-          <ContactApps />
-            <a href="/about"><h1>ABOUT</h1></a>
+          <section className="contact"> 
+                 <ContactApps />
+          </section>
+          <footer>
+              <h2 className="footer__title">gfouz &copy; {new Date().getFullYear()}</h2>
+              <img className="footer__image" src="./images/submarine.jpg" />  
+          </footer>
         </StyledHome>
       </ThemeProvider>
     </>
@@ -71,6 +76,29 @@ export default Homepage;
 
 const StyledHome = styled.div`
   min-height: 100vh;
+  footer {
+   position: relative;
+   width: 100%;
+   text-align: right;
+  }
+  .footer__title {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    color: #0066ff;
+    margin: 0;
+    padding: 0 5px;
+    @media (max-width: 570px) {
+      color: #ffffff;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .footer__image {
+    max-width: 100%;
+    height: auto;
+  }
   .about__title {
     margin: 0;
     color: #666666;
@@ -136,23 +164,34 @@ const StyledHome = styled.div`
     color: #555555;
   }
 `;
+
+
 const Banner = styled.div`
    position: relative;
     width: 100%;
-    text-align: center;
-    padding: 2.5em 0 0 0;
-    background-color: #c2e0fc;
+    text-align: left;
+    background-color: #fefdf9;
     .main__image {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
+  }
+  .banner__title {
+    position: absolute;
+    top:60%;
+    left: 50%;
+    max-width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
   }
 `;
 const Logo = styled.div`
    position: absolute;
+   text-align: center;
    top: 15px;
    left: 10px;
    .logo__title {
    color: #ffffff;
    margin: 5px;
   }
+  
 `;

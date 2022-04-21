@@ -12,7 +12,7 @@ export function SpyGlass(props: Props) {
     {
       viewBox: "0 0 512 512",
       width: props.size || "1em",
-      height: props.height || "auto",
+      length: props.height || "auto",
       ...props,
     },
     createElement("path", {

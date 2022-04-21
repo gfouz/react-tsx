@@ -42,7 +42,7 @@ const StyledNavbar = styled.div`
       width: 100%;
       padding: 0;
       margin: -1px 0;
-      background-color: #c2e0fc;
+      background-color: #ffffff;
     }
     &__item {
       list-style-type: none;

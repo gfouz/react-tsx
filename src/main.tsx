@@ -7,12 +7,11 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-     <>
-     <StyledApp>
+  <>
       <Router>
     <div>
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/react-tsx">
         <Homepage />
       </Route>
       <Route path="/about">
@@ -21,7 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     </Switch>
     </div>
   </Router>
-     </StyledApp>
-    </>
+</>
   </React.StrictMode>
 )

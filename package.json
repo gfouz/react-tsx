@@ -2,7 +2,7 @@
   "name": "router-v5",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gfouz.github.io/lets-go-react",
+  "homepage": "https://gfouz.github.io/react-tsx",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -16,7 +16,7 @@ interface Props {
 
 const props: Props = {
    size: "30px",
-   color: "#1c0b1b"
+   color: "#0066ff"
 }
 
 function ContactApps() {
@@ -55,7 +55,7 @@ const StyledMedia = styled.div`
   .media-list {
     padding: 0;
     width: 100%;
-    height: 200px;
+    height: 120px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
