@@ -165,7 +165,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
       font-weight: bolder;
     }
   }
-`,k1=()=>I(Xt,{children:I(Oo,{theme:Io,children:Ee(x1,{children:[Ee(E1,{children:[I("img",{className:"main__image",src:"./images/man.jpg"}),I("img",{className:"banner__title",src:"./images/port.png"}),Ee(fc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(cc,{color:"#ffffff",size:"1.5em"})]})]}),I("header",{children:I(w1,{})}),Ee(ac,{padding:"2em 0",children:[Ee(uc,{padding:"0.3em 1em",children:[I("h3",{className:"about__title",children:"A little about me"}),I("p",{className:"about__paragraph",children:t1})]}),Ee(sc,{imagePercentage:"50%",children:[I("img",{src:"./images/pallete.jpg"}),I("h4",{className:"about__image-title",children:"styled-components"})]})]}),Ee("article",{className:"stack",children:[Ee(fc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(cc,{color:"#ffffff",size:"1.5em"})]}),Ee("div",{className:"stack__list",children:[I("h4",{className:"stack__title",children:"Study Modern React"}),I("h4",{className:"stack__title",children:"zustang"}),I("h4",{className:"stack__title",children:"react-query"}),I("h4",{className:"stack__title",children:"react-hook-form"})]})]}),Ee(ac,{padding:"2em 0",children:[Ee(uc,{padding:"0.1em 1em",children:[I("h3",{className:"technical__title",children:"Technologies i use"}),I("p",{className:"technical__paragraph",children:e1})]}),I(sc,{imagePercentage:"80%",padding:"1em",children:I("img",{className:"technical__image",src:"./images/freelancer.jpg"})})]}),I("section",{className:"contact",children:I(h1,{})}),Ee("footer",{children:[Ee("h2",{className:"footer__title",children:["gfouz \xA9 ",new Date().getFullYear()]}),I("img",{className:"footer__image",src:"./images/submarine.jpg"})]})]})})}),x1=qt.div`
+`,k1=()=>I(Xt,{children:I(Oo,{theme:Io,children:Ee(x1,{children:[Ee(E1,{children:[I("img",{className:"main__image",src:"./images/man.jpg"}),I("img",{className:"banner__title",src:"./images/port.png"}),Ee(fc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(cc,{color:"#ffffff",size:"1.5em"})]})]}),I("header",{children:I(w1,{})}),Ee(ac,{padding:"2em 0",children:[Ee(uc,{padding:"0.3em 1em",children:[I("h3",{className:"about__title",children:"A little about me"}),I("p",{className:"about__paragraph",children:t1})]}),Ee(sc,{imagePercentage:"30%",children:[I("img",{src:"./images/pallete1.jpg"}),I("h4",{className:"about__image-title",children:"styled-components"})]})]}),Ee("article",{className:"stack",children:[Ee(fc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(cc,{color:"#ffffff",size:"1.5em"})]}),Ee("div",{className:"stack__list",children:[I("h4",{className:"stack__title",children:"Study Modern React"}),I("h4",{className:"stack__title",children:"zustang"}),I("h4",{className:"stack__title",children:"react-query"}),I("h4",{className:"stack__title",children:"react-hook-form"})]})]}),Ee(ac,{padding:"2em 0",children:[Ee(uc,{padding:"0.1em 1em",children:[I("h3",{className:"technical__title",children:"Technologies i use"}),I("p",{className:"technical__paragraph",children:e1})]}),I(sc,{imagePercentage:"80%",padding:"1em",children:I("img",{className:"technical__image",src:"./images/freelancer.jpg"})})]}),I("section",{className:"contact",children:I(h1,{})}),Ee("footer",{children:[Ee("h2",{className:"footer__title",children:["gfouz \xA9 ",new Date().getFullYear()]}),I("img",{className:"footer__image",src:"./images/submarine.jpg"})]})]})})}),x1=qt.div`
   min-height: 100vh;
   footer {
    position: relative;
@@ -213,7 +213,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
     text-align: center;
     width: 100%;
     height: 400px;
-    background-image: url('./images/boy.jpg');
+    background-image: url('./images/training.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,8 +229,8 @@ for accomplishing, i feel good when i am doing things on my laptop.
     transform: translate(-50%, -50%);
     padding: 0.5em;
     border-radius: 5px;
-    background-color: #00000050;
-    box-shadow: 1px 1px 10px #000000;
+    background-color: #11abd690;
+    box-shadow: 1px 1px 10px #11abd6;
   }
   .stack__title {
     ${({theme:e})=>e.reset()};
