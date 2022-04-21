@@ -33,8 +33,8 @@ const Homepage = () => {
               <h3 className="about__title">A little about me</h3>
               <p className="about__paragraph">{about}</p>
             </Article>
-            <Figure imagePercentage="50%">
-              <img  src="./images/pallete.jpg" />
+            <Figure imagePercentage="30%">
+              <img  src="./images/pallete1.jpg" />
               <h4 className="about__image-title">styled-components</h4>
             </Figure>
           </Section>
@@ -122,7 +122,7 @@ const StyledHome = styled.div`
     text-align: center;
     width: 100%;
     height: 400px;
-    background-image: url('./images/boy.jpg');
+    background-image: url('./images/training.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,8 +138,8 @@ const StyledHome = styled.div`
     transform: translate(-50%, -50%);
     padding: 0.5em;
     border-radius: 5px;
-    background-color: #00000050;
-    box-shadow: 1px 1px 10px #000000;
+    background-color: #11abd690;
+    box-shadow: 1px 1px 10px #11abd6;
   }
   .stack__title {
     ${({ theme }) => theme.reset()};
