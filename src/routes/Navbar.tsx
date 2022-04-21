@@ -42,7 +42,7 @@ const StyledNavbar = styled.div`
       width: 100%;
       padding: 0;
       margin: -1px 0;
-      background-color: #613ba2;
+      background-color: #c2e0fc;
     }
     &__item {
       list-style-type: none;
@@ -50,7 +50,7 @@ const StyledNavbar = styled.div`
     &__link {
       margin: 0 1em;
       text-decoration: none;
-      color: #ffffff;
+      color: #43515a;
       font-weight: bolder;
     }
   }

@@ -1,18 +1,19 @@
 import { createElement } from "react";
 
 interface Props {
-  size: string;
-  high?: string;
-  color: string;
+  size: string
+  high?: string
+  color: string
+  height?: string
 }
 
-export function SvgReact(props: Props) {
+export function ReactIcon(props: Props) {
   return createElement(
     "svg",
     {
       viewBox: "0 0 32 32",
       width: props.size || "1em",
-      height: "auto",
+      height: props.height || "auto",
       ...props,
     },
     createElement("path", {
@@ -22,4 +23,4 @@ export function SvgReact(props: Props) {
     })
   );
 }
-export default SvgReact;
+export default ReactIcon;

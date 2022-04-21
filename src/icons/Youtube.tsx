@@ -1,9 +1,10 @@
 import { createElement } from "react";
 
 interface Props {
-  size: string;
-  high?: string;
-  color: string;
+  size?: string
+  high?: string
+  color?: string
+  height?: string
 }
 
 
@@ -13,7 +14,7 @@ export function SvgYoutube(props: Props) {
     {
       viewBox: "0 0 32 32",
       width: props.size || "1em",
-      height: "auto",
+      height: props.height || "auto",
       ...props,
     },
     createElement("path", {
