@@ -10,17 +10,17 @@ function Navbar() {
             <nav className="navbar">
               <ul className="navbar__list">
                 <li className="navbar__item">
-                  <a  href="/about" className="navbar__link">
+                  <a  href="https://gfouz.github.io/react-workshop/#/about" className="navbar__link">
                     ABOUT
                   </a>
                 </li>
                 <li className="navbar__item">
-                  <a href="/work" className="navbar__link">
+                  <a href="https://gfouz.github.io/react-workshop/#/work" className="navbar__link">
                     WORK
                   </a>
                 </li>
                 <li className="navbar__item">
-                  <a href="/blog" className="navbar__link">
+                  <a href="https://gfouz.github.io/react-workshop/#/blog" className="navbar__link">
                     BLOG
                   </a>
                 </li>
