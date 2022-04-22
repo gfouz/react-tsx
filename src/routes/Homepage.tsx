@@ -43,7 +43,7 @@ const Homepage = () => {
                   we have a DOM that has already been built, with all our components rendered as HTML.
                 </p>
               </div>
-              <img  src= "./images/young.jpg" alt="woman" />
+              <img className="aside__image"  src= "./images/young.jpg" alt="woman" />
             </Aside>
           </Section>
           <article className="stack">
@@ -204,3 +204,4 @@ const Logo = styled.div`
   
 `;
 //https://github.com/gfouz/react-tsx.git
+//You can also disable this overlay by setting server.hmr.overlay to false in vite.config.js.

@@ -10,8 +10,8 @@ function Navbar() {
             <nav className="navbar">
               <ul className="navbar__list">
                 <li className="navbar__item">
-                  <a  href="https://gfouz.github.io/react-workshop/#/about" className="navbar__link">
-                    ABOUT
+                  <a  href="/react-tsx/contact" className="navbar__link">
+                    CONTACT
                   </a>
                 </li>
                 <li className="navbar__item">
