@@ -2,17 +2,19 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 interface Props {
-	children: React.ReactNode
+	children?: React.ReactNode
 	textAlign?: string
 	maxWidth?: string
 	margin?: string
 	padding?: string
 	textPadding?: string
 	titleColor?: string
+  fontSize?: string
 	breakpoint?: string
 	imageSize?: string
 	imagePadding?: string
 	imageMargin?: string
+  contentSize?: string
 }
 
 function Aside (props: Props) {
@@ -39,6 +41,7 @@ const StyledAside = styled.aside`
   }
   p, h1, h2, h3, h4, h5, h5 {
     padding: ${(props: Props)=> props.textPadding || "0"};
+    font-size: ${(props: Props)=> props.fontSize };
     text-align: left;
   }
   h1, h2, h3, h4, h5, h5 {
@@ -49,11 +52,12 @@ const StyledAside = styled.aside`
   }
   img {
     max-width: ${(props: Props)=> props.imageSize || "100%"};
-    height: auto;
     padding: ${(props: Props) => props.imagePadding || "0"};
-    margin: ${(props: Props)=> props.imageMargin || "0"}
+    margin: ${(props: Props)=> props.imageMargin || "0"};
+    object-fit: cover;
+    height: auto;
     }
   div {
-  	width: 40%;
+  	width: ${(props: Props)=> props.contentSize || "50%"};
   } 
 `;

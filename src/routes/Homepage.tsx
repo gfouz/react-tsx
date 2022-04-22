@@ -29,42 +29,42 @@ const Homepage = () => {
           <header>
             <Navbar />
           </header>
-          <Section padding="2em 0">
+          <Section padding="1em 0">
             <Article padding="0.3em 1em">
               <h3 className="about__title">A little about me</h3>
               <p className="about__paragraph">{about}</p>
             </Article>
-            <Aside imageSize="70%"  textPadding="0.3em 1em">
+            <Aside imageSize="55%"  textPadding="0.3em 1em" >
               <div className="nameless">
                 <h3>Did you know?</h3>
                 <p>
-                  One of the most common examples of a methodology 
-                  in programming is Object-Oriented Programming. 
-                  It’s a programming paradigm embodied by many languages. 
+                  React hydration is a technique used that is similar to rendering, 
+                  but instead of having an empty DOM to render all of our react components into, 
+                  we have a DOM that has already been built, with all our components rendered as HTML.
                 </p>
               </div>
-              <img  src="./images/prettywoman.jpg" />
+              <img  src= "./images/young.jpg" alt="woman" />
             </Aside>
           </Section>
           <article className="stack">
             <Logo>
               <h2 className="logo__title">gfouz</h2>
-              <SpyGlass color="#777777" size="1.5em" />
+              <SpyGlass color="#ffffff" size="1.5em" />
             </Logo>
             <div className="stack__list">
-              <h4 className="stack__title">Study Modern React</h4>
+              <h4 className="stack__title">Modern React State</h4>
               <h4 className="stack__title">zustang</h4>
               <h4 className="stack__title">react-query</h4>
               <h4 className="stack__title">react-hook-form</h4>
             </div>
           </article>
-          <Section padding="2em 0">
-            <Article padding="0.1em 1em">
-              <h3 className="technical__title">Technologies i use</h3>
+          <Section padding="2em 0" bg="#181818">
+            <Article padding="0.1em 1em" textColor="#b2b2b2">
+              <h3 className="technical__title">I use these technologies</h3>
               <p className="technical__paragraph">{technologies}</p>
             </Article>
-            <Figure imagePercentage="80%" padding="2em 1em">
-              <img className="technical__image" src="./images/freelancer.jpg" />
+            <Figure imagePercentage="60%" padding="2em 1em">
+              <img className="technical__image" src="./images/face.jpg" />
             </Figure>
           </Section>
           <section className="contact"> 
@@ -84,6 +84,7 @@ export default Homepage;
 
 const StyledHome = styled.div`
   min-height: 100vh;
+  font-family: calibri;
   footer {
    position: relative;
    width: 100%;
@@ -133,7 +134,7 @@ const StyledHome = styled.div`
     text-align: center;
     width: 100%;
     height: 400px;
-    background-image: url('./images/training.jpg');
+    background-image: url('./images/laptop.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,8 +150,8 @@ const StyledHome = styled.div`
     transform: translate(-50%, -50%);
     padding: 0.5em;
     border-radius: 5px;
-    background-color: #11abd690;
-    box-shadow: 1px 1px 10px #11abd6;
+    background-color: #22222290;
+    box-shadow: 1px 1px 10px #222222;
   }
   .stack__title {
     ${({ theme }) => theme.reset()};
@@ -166,14 +167,7 @@ const StyledHome = styled.div`
       ${({ theme }) => theme.column("flex-start", "center")};
     }
   }
-  .technical__title {
-    margin: 0;
-    color: #666666;
-  }
-  .technical__paragraph {
-    margin: 0;
-    color: #555555;
-  }
+  
 `;
 const Banner = styled.div`
    position: relative;
@@ -181,7 +175,8 @@ const Banner = styled.div`
     text-align: left;
     background-color: #fefdf9;
     .main__image {
-    max-width: 70%;
+    max-width: 80%;
+    object-fit: cover;
     height: auto;
     @media (min-width: 700px) {
     max-width: 30%;

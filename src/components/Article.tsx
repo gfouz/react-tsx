@@ -4,7 +4,9 @@ interface Props {
   margin?: string;
   padding?: string;
   breakpoint?: string;
-  children: React.ReactNode;
+  textColor?: string;
+  textMargin?: string;
+  children?: React.ReactNode;
 }
 const Article = (props: Props) => {
   return (
@@ -25,6 +27,8 @@ const StyledArticle = styled.article`
   }
   p, h1,h2,h3,h4,h5,h5 {
     padding: ${(props: Props)=> props.padding || "0"};
+    margin: ${(props: Props)=> props.textMargin || "0"};
+    color: ${(props: Props)=> props.textColor};
   }
 `;
 
