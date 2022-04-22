@@ -34,7 +34,7 @@ const Homepage = () => {
               <h3 className="about__title">A little about me</h3>
               <p className="about__paragraph">{about}</p>
             </Article>
-            <Aside imageSize="50%"  textPadding="0.3em 1em">
+            <Aside imageSize="70%"  textPadding="0.3em 1em">
               <div className="nameless">
                 <h3>Did you know?</h3>
                 <p>
@@ -63,7 +63,7 @@ const Homepage = () => {
               <h3 className="technical__title">Technologies i use</h3>
               <p className="technical__paragraph">{technologies}</p>
             </Article>
-            <Figure imagePercentage="80%" padding="1em">
+            <Figure imagePercentage="80%" padding="2em 1em">
               <img className="technical__image" src="./images/freelancer.jpg" />
             </Figure>
           </Section>
@@ -175,8 +175,6 @@ const StyledHome = styled.div`
     color: #555555;
   }
 `;
-
-
 const Banner = styled.div`
    position: relative;
     width: 100%;
@@ -185,6 +183,9 @@ const Banner = styled.div`
     .main__image {
     max-width: 70%;
     height: auto;
+    @media (min-width: 700px) {
+    max-width: 30%;
+    }
   }
   .banner__title {
     position: absolute;

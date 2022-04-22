@@ -56,6 +56,6 @@ const StyledAside = styled.aside`
     margin: ${(props: Props)=> props.imageMargin || "0"}
     }
   div {
-  	width: 50%;
+  	width: 40%;
   } 
 `;
