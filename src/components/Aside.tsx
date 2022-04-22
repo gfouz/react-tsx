@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 interface Props {
 	children: React.ReactNode
-	textAlign: string
-	maxWidth: string
-	margin: string
-	padding: string
-	textPadding: string
-	titleColor: string
-	breakpoint: string
-	imageSize: string
-	imagePadding: string
-	imageMargin: string
+	textAlign?: string
+	maxWidth?: string
+	margin?: string
+	padding?: string
+	textPadding?: string
+	titleColor?: string
+	breakpoint?: string
+	imageSize?: string
+	imagePadding?: string
+	imageMargin?: string
 }
 
 function Aside (props: Props) {
@@ -46,7 +46,6 @@ const StyledAside = styled.aside`
   }
   p {
   	color: #777777;
-  	z-index: 1;
   }
   img {
     max-width: ${(props: Props)=> props.imageSize || "100%"};
