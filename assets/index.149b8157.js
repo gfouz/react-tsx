@@ -101,7 +101,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
   .media-list {
     padding: 0;
     width: 100%;
-    height: 120px;
+    height: 200px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -111,7 +111,9 @@ for accomplishing, i feel good when i am doing things on my laptop.
   }
 `,ac=e=>I($t,{children:I(Oo,{theme:Io,children:I(m1,Zn(je({},e),{children:e.children}))})}),m1=Rt.section`
   width: 100%;
+  margin: ${e=>e.margin||"0"};
   padding: ${e=>e.padding||"0"};
+  background-color: ${e=>e.bg||"transparent"};
   ${({theme:e})=>e.row("space-evenly","flex-start")};
   @media (max-width: ${e=>e.breakpoint||"700px"}) {
     ${({theme:e})=>e.column("flex-start","center")};
@@ -124,6 +126,8 @@ for accomplishing, i feel good when i am doing things on my laptop.
   }
   p, h1,h2,h3,h4,h5,h5 {
     padding: ${e=>e.padding||"0"};
+    margin: ${e=>e.textMargin||"0"};
+    color: ${e=>e.textColor};
   }
 `,g1=e=>I($t,{children:I(Oo,{theme:Io,children:I(y1,Zn(je({},e),{children:e.children}))})}),y1=Rt.figure`
     position: relative;
@@ -155,6 +159,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
   }
   p, h1, h2, h3, h4, h5, h5 {
     padding: ${e=>e.textPadding||"0"};
+    font-size: ${e=>e.fontSize};
     text-align: left;
   }
   h1, h2, h3, h4, h5, h5 {
@@ -165,12 +170,13 @@ for accomplishing, i feel good when i am doing things on my laptop.
   }
   img {
     max-width: ${e=>e.imageSize||"100%"};
-    height: auto;
     padding: ${e=>e.imagePadding||"0"};
-    margin: ${e=>e.imageMargin||"0"}
+    margin: ${e=>e.imageMargin||"0"};
+    object-fit: cover;
+    height: auto;
     }
   div {
-  	width: 40%;
+  	width: ${e=>e.contentSize||"50%"};
   } 
 `;function sc(e){return fe.exports.createElement("svg",je({viewBox:"0 0 512 512",width:e.size||"1em",length:e.height||"auto"},e),fe.exports.createElement("path",{fill:e.color,fillRule:"evenodd",d:"M512 256c0 141.2-114.7 256-256 256C114.8 512 0 397.3 0 256S114.7 0 256 0s256 114.7 256 256zm-32 0c0-123.2-100.3-224-224-224C132.5 32 32 132.5 32 256s100.5 224 224 224 224-100.5 224-224zM160.9 124.6l86.9 37.1-37.1 86.9-86.9-37.1 37.1-86.9zm110 169.1l46.6 94h-14.6l-50-100-48.9 100h-14l51.1-106.9-22.3-9.4 6-14 68.6 29.1-6 14.3-16.5-7.1zm-11.8-116.3l68.6 29.4-29.4 68.3L230 246l29.1-68.6zm80.3 42.9l54.6 23.1-23.4 54.3-54.3-23.1 23.1-54.3z"}))}function x1(){return I($t,{children:I(k1,{children:I("nav",{className:"navbar",children:ye("ul",{className:"navbar__list",children:[I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/about",className:"navbar__link",children:"ABOUT"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/work",className:"navbar__link",children:"WORK"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/blog",className:"navbar__link",children:"BLOG"})})]})})})})}const k1=Rt.div`
 .navbar {
@@ -194,8 +200,9 @@ for accomplishing, i feel good when i am doing things on my laptop.
       font-weight: bolder;
     }
   }
-`,E1=()=>I($t,{children:I(Oo,{theme:Io,children:ye(C1,{children:[ye(_1,{children:[I("img",{className:"main__image",src:"./images/man.jpg"}),I("img",{className:"banner__title",src:"./images/port.png"}),ye(cc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(sc,{color:"#ffffff",size:"1.5em"})]})]}),I("header",{children:I(x1,{})}),ye(ac,{padding:"2em 0",children:[ye(uc,{padding:"0.3em 1em",children:[I("h3",{className:"about__title",children:"A little about me"}),I("p",{className:"about__paragraph",children:e1})]}),ye(w1,{imageSize:"70%",textPadding:"0.3em 1em",children:[ye("div",{className:"nameless",children:[I("h3",{children:"Did you know?"}),I("p",{children:"One of the most common examples of a methodology in programming is Object-Oriented Programming. It\u2019s a programming paradigm embodied by many languages."})]}),I("img",{src:"./images/prettywoman.jpg"})]})]}),ye("article",{className:"stack",children:[ye(cc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(sc,{color:"#777777",size:"1.5em"})]}),ye("div",{className:"stack__list",children:[I("h4",{className:"stack__title",children:"Study Modern React"}),I("h4",{className:"stack__title",children:"zustang"}),I("h4",{className:"stack__title",children:"react-query"}),I("h4",{className:"stack__title",children:"react-hook-form"})]})]}),ye(ac,{padding:"2em 0",children:[ye(uc,{padding:"0.1em 1em",children:[I("h3",{className:"technical__title",children:"Technologies i use"}),I("p",{className:"technical__paragraph",children:bm})]}),I(g1,{imagePercentage:"80%",padding:"2em 1em",children:I("img",{className:"technical__image",src:"./images/freelancer.jpg"})})]}),I("section",{className:"contact",children:I(p1,{})}),ye("footer",{children:[ye("h2",{className:"footer__title",children:["gfouz \xA9 ",new Date().getFullYear()]}),I("img",{className:"footer__image",src:"./images/submarine.jpg"})]})]})})}),C1=Rt.div`
+`,E1=()=>I($t,{children:I(Oo,{theme:Io,children:ye(C1,{children:[ye(_1,{children:[I("img",{className:"main__image",src:"./images/man.jpg"}),I("img",{className:"banner__title",src:"./images/port.png"}),ye(cc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(sc,{color:"#ffffff",size:"1.5em"})]})]}),I("header",{children:I(x1,{})}),ye(ac,{padding:"1em 0",children:[ye(uc,{padding:"0.3em 1em",children:[I("h3",{className:"about__title",children:"A little about me"}),I("p",{className:"about__paragraph",children:e1})]}),ye(w1,{imageSize:"55%",textPadding:"0.3em 1em",children:[ye("div",{className:"nameless",children:[I("h3",{children:"Did you know?"}),I("p",{children:"React hydration is a technique used that is similar to rendering, but instead of having an empty DOM to render all of our react components into, we have a DOM that has already been built, with all our components rendered as HTML."})]}),I("img",{src:"./images/young.jpg",alt:"woman"})]})]}),ye("article",{className:"stack",children:[ye(cc,{children:[I("h2",{className:"logo__title",children:"gfouz"}),I(sc,{color:"#ffffff",size:"1.5em"})]}),ye("div",{className:"stack__list",children:[I("h4",{className:"stack__title",children:"Modern React State"}),I("h4",{className:"stack__title",children:"zustang"}),I("h4",{className:"stack__title",children:"react-query"}),I("h4",{className:"stack__title",children:"react-hook-form"})]})]}),ye(ac,{padding:"2em 0",bg:"#181818",children:[ye(uc,{padding:"0.1em 1em",textColor:"#b2b2b2",children:[I("h3",{className:"technical__title",children:"I use these technologies"}),I("p",{className:"technical__paragraph",children:bm})]}),I(g1,{imagePercentage:"60%",padding:"2em 1em",children:I("img",{className:"technical__image",src:"./images/face.jpg"})})]}),I("section",{className:"contact",children:I(p1,{})}),ye("footer",{children:[ye("h2",{className:"footer__title",children:["gfouz \xA9 ",new Date().getFullYear()]}),I("img",{className:"footer__image",src:"./images/submarine.jpg"})]})]})})}),C1=Rt.div`
   min-height: 100vh;
+  font-family: calibri;
   footer {
    position: relative;
    width: 100%;
@@ -245,7 +252,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
     text-align: center;
     width: 100%;
     height: 400px;
-    background-image: url('./images/training.jpg');
+    background-image: url('./images/laptop.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -261,8 +268,8 @@ for accomplishing, i feel good when i am doing things on my laptop.
     transform: translate(-50%, -50%);
     padding: 0.5em;
     border-radius: 5px;
-    background-color: #11abd690;
-    box-shadow: 1px 1px 10px #11abd6;
+    background-color: #22222290;
+    box-shadow: 1px 1px 10px #222222;
   }
   .stack__title {
     ${({theme:e})=>e.reset()};
@@ -278,21 +285,15 @@ for accomplishing, i feel good when i am doing things on my laptop.
       ${({theme:e})=>e.column("flex-start","center")};
     }
   }
-  .technical__title {
-    margin: 0;
-    color: #666666;
-  }
-  .technical__paragraph {
-    margin: 0;
-    color: #555555;
-  }
+  
 `,_1=Rt.div`
    position: relative;
     width: 100%;
     text-align: left;
     background-color: #fefdf9;
     .main__image {
-    max-width: 70%;
+    max-width: 80%;
+    object-fit: cover;
     height: auto;
     @media (min-width: 700px) {
     max-width: 30%;
