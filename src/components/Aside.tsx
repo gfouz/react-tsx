@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 interface Props {
 	children: React.ReactNode
-	top: string
-	left: string
 	textAlign: string
 	maxWidth: string
 	margin: string
