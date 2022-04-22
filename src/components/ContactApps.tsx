@@ -16,7 +16,7 @@ interface Props {
 
 const props: Props = {
    size: "30px",
-   color: "#0066ff"
+   color: "#000000"
 }
 
 function ContactApps() {

@@ -6,6 +6,7 @@ import ContactApps from '../components/ContactApps'
 import Section from '../components/Section'
 import Article from '../components/Article'
 import Figure from '../components/Figure'
+import Aside from '../components/Aside'
 import SpyGlass from '../icons/SpyGlass'
 import GitAlt from '../icons/GitAlt'
 import Navbar from './Navbar'
@@ -33,15 +34,22 @@ const Homepage = () => {
               <h3 className="about__title">A little about me</h3>
               <p className="about__paragraph">{about}</p>
             </Article>
-            <Figure imagePercentage="30%">
-              <img  src="./images/pallete1.jpg" />
-              <h4 className="about__image-title">styled-components</h4>
-            </Figure>
+            <Aside imageSize="50%"  textPadding="0.3em 1em">
+              <div className="nameless">
+                <h3>Did you know?</h3>
+                <p>
+                  One of the most common examples of a methodology 
+                  in programming is Object-Oriented Programming. 
+                  It’s a programming paradigm embodied by many languages. 
+                </p>
+              </div>
+              <img  src="./images/prettywoman.jpg" />
+            </Aside>
           </Section>
           <article className="stack">
             <Logo>
               <h2 className="logo__title">gfouz</h2>
-              <SpyGlass color="#ffffff" size="1.5em" />
+              <SpyGlass color="#777777" size="1.5em" />
             </Logo>
             <div className="stack__list">
               <h4 className="stack__title">Study Modern React</h4>
@@ -113,8 +121,11 @@ const StyledHome = styled.div`
   }
   .about__image-title {
     margin: 1em;
+    padding: 0 5px;
+    border-radius: 5px;
     text-transform: uppercase;
     text-align: right;
+    color: #0066ff;
   }
   .stack {
     ${({ theme }) => theme.centered()}
@@ -172,7 +183,7 @@ const Banner = styled.div`
     text-align: left;
     background-color: #fefdf9;
     .main__image {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
   }
   .banner__title {
@@ -191,6 +202,7 @@ const Logo = styled.div`
    left: 10px;
    .logo__title {
    color: #ffffff;
+   text-shadow: 1px 1px 10px #000000;
    margin: 5px;
   }
   

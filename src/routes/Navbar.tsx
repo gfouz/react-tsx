@@ -38,7 +38,7 @@ const StyledNavbar = styled.div`
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      height: 40px;
+      height: 100px;
       width: 100%;
       padding: 0;
       margin: -1px 0;
