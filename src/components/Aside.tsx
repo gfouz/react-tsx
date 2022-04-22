@@ -10,6 +10,7 @@ interface Props {
 	margin: string
 	padding: string
 	textPadding: string
+	titleColor: string
 	breakpoint: string
 	imageSize: string
 	imagePadding: string
@@ -43,7 +44,7 @@ const StyledAside = styled.aside`
     text-align: left;
   }
   h1, h2, h3, h4, h5, h5 {
-     color: ${(props: Props)=> props.color || "#666666"};
+     color: ${(props: Props)=> props.titleColor || "#666666"};
   }
   p {
   	color: #777777;
