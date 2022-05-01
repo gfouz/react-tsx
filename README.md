@@ -14,7 +14,7 @@ I have created react components inspired on semantic HTML elements as for exampl
 
 ### Why use semantic elements?
 To look at the benefits of semantic elements, here are two pieces of HTML code. This first block of code uses semantic elements:
-
+```html
 <header></header>
 <section>
 	<article>
@@ -26,8 +26,9 @@ To look at the benefits of semantic elements, here are two pieces of HTML code. 
 </section>
 <footer></footer>
 
+```
 ### Whilst this second block of code uses non-semantic elements:
-
+```html
 <div id="header"></div>
 <div class="section">
 	<div class="article">
@@ -39,6 +40,7 @@ To look at the benefits of semantic elements, here are two pieces of HTML code. 
 </div>
 <div id="footer"></div>
 
+```
 First, it is much easier to read. This is probably the first thing you will notice when looking at the first block of code using semantic elements. This is a small example, but as a programmer you can be reading through hundreds or thousands of lines of code. The easier it is to read and understand that code, the easier it makes your job.
 
 It has greater accessibility. You are not the only one that finds semantic elements easier to understand. Search engines and assistive technologies (like screen readers for users with a sight impairment) are also able to better understand the context and content of your website, meaning a better experience for your users.

@@ -1,5 +1,6 @@
   import * as React from 'react'
-  import styled from 'styled-components'        
+  import styled from 'styled-components'    
+  import {Link} from 'react-router-dom';    
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
             <nav className="navbar">
               <ul className="navbar__list">
                 <li className="navbar__item">
-                  <a  href="/react-tsx/contact" className="navbar__link">
+                  <a  href="/contact" className="navbar__link">
                     CONTACT
                   </a>
                 </li>

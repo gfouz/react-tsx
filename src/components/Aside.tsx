@@ -17,7 +17,7 @@ interface Props {
   imageSize?: string;
   imagePadding?: string;
   imageMargin?: string;
-  contentSize?: string;
+  boxSize?: string;
   column?: string;
   row?: string;
 }
@@ -75,7 +75,7 @@ const StyledAside = styled.aside`
   }
 
   div {
-    width: ${(props: Props) => props.contentSize || "50%"};
+    width: ${(props: Props) => props.boxSize || "50%"};
   }
   ${(props: Props) =>
     props.column &&

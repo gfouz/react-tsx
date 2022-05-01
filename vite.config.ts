@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+ //base: "/react-tsx/",
 export default defineConfig({
-  base: "/react-tsx/",
+  //base: "/react-tsx/",
   plugins: [react()]
 })
