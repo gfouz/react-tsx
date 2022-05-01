@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
  //base: "/react-tsx/",
 export default defineConfig({
-  //base: "/react-tsx/",
+  base: "/react-tsx/",
   plugins: [react()]
 })
