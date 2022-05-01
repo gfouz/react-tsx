@@ -26,9 +26,9 @@ const StyledArticle = styled.article`
   ${({ theme }) => theme.article("600px")};  
   }
   p, h1,h2,h3,h4,h5,h5 {
-    padding: ${(props: Props)=> props.padding || "0"};
-    margin: ${(props: Props)=> props.textMargin || "0"};
-    color: ${(props: Props)=> props.textColor};
+    padding: ${(props: Props) => props.padding || "0"};
+    margin: ${(props: Props) => props.textMargin || "0"};
+    color: ${(props: Props) => props.textColor};
   }
 `;
 

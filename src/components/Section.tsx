@@ -1,7 +1,7 @@
 import { theme } from "../theme";
 import styled, { ThemeProvider } from "styled-components";
 interface Props {
-  bg?: string
+  bg?: string;
   padding?: string;
   margin?: string;
   breakpoint?: string;
@@ -20,9 +20,9 @@ const Section = (props: Props) => {
 export default Section;
 const StyledSection = styled.section`
   width: 100%;
-  margin: ${(props: Props)=> props.margin || "0"};
+  margin: ${(props: Props) => props.margin || "0"};
   padding: ${(props: Props) => props.padding || "0"};
-  background-color: ${(props: Props)=> props.bg || "transparent"};
+  background-color: ${(props: Props) => props.bg || "transparent"};
   ${({ theme }) => theme.row("space-evenly", "flex-start")};
   @media (max-width: ${(props: Props) => props.breakpoint || "700px"}) {
     ${({ theme }) => theme.column("flex-start", "center")};

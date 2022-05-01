@@ -11,6 +11,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^5.6.4",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.25",
     "react": "^18.0.0",

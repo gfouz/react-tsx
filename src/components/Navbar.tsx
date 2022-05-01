@@ -1,43 +1,56 @@
-import * as React from 'react'
-import styled from 'styled-components'
+import * as React from "react";
+import styled from "styled-components";
 
-
-const Navbar = ()=> {
- 
-   return(
-   	<>
-     <StyledNavbar>
-      <nav className="navbar">
-       <ul className="navbar__list">
-        <li className="navbar__item">
-       	  <a className="navbar__link" href="https://gfouz.github.io/react-workshop">about</a>
-        </li>
-        <li className="navbar__item">
-       	  <a className="navbar__link" href="https://gfouz.github.io/react-workshop">work</a>
-        </li>
-        <li className="navbar__item">
-       	  <a className="navbar__link" href="https://gfouz.github.io/react-workshop">blog</a>
-        </li>
-       </ul>
-      </nav>
-    </StyledNavbar>
-   </>
-   	);
-}
+const Navbar = () => {
+  return (
+    <>
+      <StyledNavbar>
+        <nav className="navbar">
+          <ul className="navbar__list">
+            <li className="navbar__item">
+              <a
+                className="navbar__link"
+                href="https://gfouz.github.io/react-workshop"
+              >
+                about
+              </a>
+            </li>
+            <li className="navbar__item">
+              <a
+                className="navbar__link"
+                href="https://gfouz.github.io/react-workshop"
+              >
+                work
+              </a>
+            </li>
+            <li className="navbar__item">
+              <a
+                className="navbar__link"
+                href="https://gfouz.github.io/react-workshop"
+              >
+                blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </StyledNavbar>
+    </>
+  );
+};
 export default Navbar;
 
 const StyledNavbar = styled.nav`
   .navbar {
-     width: 100%;
-     height: 30px;
+    width: 100%;
+    height: 30px;
   }
-  .navbar__list { 
-   height: 30px;
-   padding: 0;
-   list-style-type: none;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
+  .navbar__list {
+    height: 30px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .navbar__item {
@@ -54,9 +67,8 @@ const StyledNavbar = styled.nav`
     padding: 0.1em 1em;
     text-transform: uppercase;
     &:hover {
-       color: #ffffff;
-       background-color: orange;
+      color: #ffffff;
+      background-color: orange;
     }
   }
 `;
-

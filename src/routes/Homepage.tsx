@@ -5,11 +5,13 @@ import { about, technologies } from './content';
 import ContactApps from '../components/ContactApps'
 import Section from '../components/Section'
 import Article from '../components/Article'
+import Paragraph from '../components/Paragraph'
 import Figure from '../components/Figure'
 import Aside from '../components/Aside'
 import SpyGlass from '../icons/SpyGlass'
 import GitAlt from '../icons/GitAlt'
 import Navbar from './Navbar'
+import Footer from '../components/Footer'
 
 
 const Homepage = () => {
@@ -29,12 +31,12 @@ const Homepage = () => {
           <header>
             <Navbar />
           </header>
-          <Section padding="1em 0">
-            <Article padding="0.3em 1em">
-              <h3 className="about__title">A little about me</h3>
-              <p className="about__paragraph">{about}</p>
-            </Article>
-            <Aside imageSize="55%"  textPadding="0.3em 1em" >
+          <Section padding="3em 0">
+            <Paragraph padding="0.5em" titleColor="#029c90">
+              <h3>A little about me</h3>
+              <p>{about}</p>
+            </Paragraph>
+            <Aside padding="0.5em" titleColor="#029c90">
               <div className="nameless">
                 <h3>Did you know?</h3>
                 <p>
@@ -43,7 +45,9 @@ const Homepage = () => {
                   we have a DOM that has already been built, with all our components rendered as HTML.
                 </p>
               </div>
-              <img className="aside__image"  src= "./images/young.jpg" alt="woman" />
+              <div>
+                <img src= "./images/young.jpg" alt="woman" />
+              </div>
             </Aside>
           </Section>
           <article className="stack">
@@ -59,21 +63,32 @@ const Homepage = () => {
             </div>
           </article>
           <Section padding="2em 0" bg="#181818">
-            <Article padding="0.1em 1em" textColor="#b2b2b2">
-              <h3 className="technical__title">I use these technologies</h3>
-              <p className="technical__paragraph">{technologies}</p>
-            </Article>
+            <Paragraph padding="0.1em 1em" textColor="#b2b2b2">
+              <h3>I use these technologies</h3>
+              <p>{technologies}</p>
+            </Paragraph>
             <Figure imagePercentage="60%" padding="2em 1em">
               <img className="technical__image" src="./images/face.jpg" />
             </Figure>
           </Section>
           <section className="contact"> 
-                 <ContactApps />
+                 <ContactApps height="200px" svgColor="#555555"/>
           </section>
-          <footer>
-              <h2 className="footer__title">gfouz &copy; {new Date().getFullYear()}</h2>
-              <img className="footer__image" src="./images/submarine.jpg" />  
-          </footer>
+          <Footer 
+            top="80%" 
+            left="25%" 
+            lighttext 
+            textAlign="right" 
+            boxBg="#224e7f"
+            boxPadding="0.5em 2em"
+            >
+             <div>
+                <h4 >gfouz &copy; {new Date().getFullYear()}</h4>
+                <ContactApps size="20px"/>
+                <p>gfouz1975@gmail.com</p>
+             </div> 
+             <img  src="./images/submarine.jpg" />  
+          </Footer>
         </StyledHome>
       </ThemeProvider>
     </>
@@ -85,49 +100,6 @@ export default Homepage;
 const StyledHome = styled.div`
   min-height: 100vh;
   font-family: calibri;
-  footer {
-   position: relative;
-   width: 100%;
-   text-align: right;
-  }
-  .footer__title {
-    position: absolute;
-    top: 65%;
-    left: 5%;
-    color: #0066ff;
-    margin: 0;
-    padding: 0 5px;
-    @media (max-width: 570px) {
-      color: #ffffff;
-      top: 65%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-  .footer__image {
-    max-width: 100%;
-    height: auto;
-  }
-  .about__title {
-    margin: 0;
-    color: #666666;
-  }
-  .about__paragraph {
-    margin: 0;
-    color: #555555;
-  }
-  .about__image {
-    max-width: 70%;
-    height: auto;
-  }
-  .about__image-title {
-    margin: 1em;
-    padding: 0 5px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-align: right;
-    color: #0066ff;
-  }
   .stack {
     ${({ theme }) => theme.centered()}
     position: relative;
@@ -158,14 +130,6 @@ const StyledHome = styled.div`
     color: ${({ theme }) => theme.white};
     text-shadow: 1px 1px 10px #000000;
     text-transform: uppercase;
-  }
-  .technical {
-    padding: 3em 0;
-    width: 100%;
-    ${({ theme }) => theme.row('space-evenly', 'flex-start')};
-    @media (max-width: 700px) {
-      ${({ theme }) => theme.column("flex-start", "center")};
-    }
   }
   
 `;

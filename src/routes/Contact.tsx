@@ -1,13 +1,25 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { about, technologies } from './content';
+
 
 
 function Contact() {
   return (
     <>
-    <h1>CONTACT ME</h1>
-    <a href="/react-tsx/"><h1>Home</h1></a>
+      <StyledContact>
+       <img src="./images/face2.jpg"  alt="face" />
+       <a href="/react-tsx/"><h1>Home</h1></a>
+      </StyledContact> 
     </>
   	);  
 }
 export default Contact;
+
+const StyledContact = styled.div`
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+`;
+
