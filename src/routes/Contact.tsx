@@ -9,7 +9,7 @@ function Contact() {
     <>
       <StyledContact>
        <img src="./images/face2.jpg"  alt="face" />
-       <a href="/"><h1>Home</h1></a>
+       <a href="/react-tsx/"><h1>Home</h1></a>
       </StyledContact> 
     </>
   	);  

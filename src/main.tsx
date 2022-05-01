@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/react-tsx" component={Homepage} />
+            <Route exact path="/react-tsx/contact" component={Contact} />
           </Switch>  
         </BrowserRouter>
 </>

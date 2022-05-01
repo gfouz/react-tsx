@@ -11,7 +11,7 @@ function Navbar() {
             <nav className="navbar">
               <ul className="navbar__list">
                 <li className="navbar__item">
-                  <a  href="/contact" className="navbar__link">
+                  <a  href="/react-tsx/contact" className="navbar__link">
                     CONTACT
                   </a>
                 </li>
