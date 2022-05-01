@@ -219,7 +219,7 @@ for accomplishing, i feel good when i am doing things on my laptop.
       justify-content: center;
       align-items: flex-start;
     `};
-`;function cc(e){return fe.exports.createElement("svg",Ne({viewBox:"0 0 512 512",width:e.size||"1em",length:e.height||"auto"},e),fe.exports.createElement("path",{fill:e.color,fillRule:"evenodd",d:"M512 256c0 141.2-114.7 256-256 256C114.8 512 0 397.3 0 256S114.7 0 256 0s256 114.7 256 256zm-32 0c0-123.2-100.3-224-224-224C132.5 32 32 132.5 32 256s100.5 224 224 224 224-100.5 224-224zM160.9 124.6l86.9 37.1-37.1 86.9-86.9-37.1 37.1-86.9zm110 169.1l46.6 94h-14.6l-50-100-48.9 100h-14l51.1-106.9-22.3-9.4 6-14 68.6 29.1-6 14.3-16.5-7.1zm-11.8-116.3l68.6 29.4-29.4 68.3L230 246l29.1-68.6zm80.3 42.9l54.6 23.1-23.4 54.3-54.3-23.1 23.1-54.3z"}))}function S1(){return I(Rt,{children:I(x1,{children:I("nav",{className:"navbar",children:ge("ul",{className:"navbar__list",children:[I("li",{className:"navbar__item",children:I("a",{href:"/contact",className:"navbar__link",children:"CONTACT"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/work",className:"navbar__link",children:"WORK"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/blog",className:"navbar__link",children:"BLOG"})})]})})})})}const x1=ft.div`
+`;function cc(e){return fe.exports.createElement("svg",Ne({viewBox:"0 0 512 512",width:e.size||"1em",length:e.height||"auto"},e),fe.exports.createElement("path",{fill:e.color,fillRule:"evenodd",d:"M512 256c0 141.2-114.7 256-256 256C114.8 512 0 397.3 0 256S114.7 0 256 0s256 114.7 256 256zm-32 0c0-123.2-100.3-224-224-224C132.5 32 32 132.5 32 256s100.5 224 224 224 224-100.5 224-224zM160.9 124.6l86.9 37.1-37.1 86.9-86.9-37.1 37.1-86.9zm110 169.1l46.6 94h-14.6l-50-100-48.9 100h-14l51.1-106.9-22.3-9.4 6-14 68.6 29.1-6 14.3-16.5-7.1zm-11.8-116.3l68.6 29.4-29.4 68.3L230 246l29.1-68.6zm80.3 42.9l54.6 23.1-23.4 54.3-54.3-23.1 23.1-54.3z"}))}function S1(){return I(Rt,{children:I(x1,{children:I("nav",{className:"navbar",children:ge("ul",{className:"navbar__list",children:[I("li",{className:"navbar__item",children:I("a",{href:"/react-tsx/contact",className:"navbar__link",children:"CONTACT"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/work",className:"navbar__link",children:"WORK"})}),I("li",{className:"navbar__item",children:I("a",{href:"https://gfouz.github.io/react-workshop/#/blog",className:"navbar__link",children:"BLOG"})})]})})})})}const x1=ft.div`
 .navbar {
     &__list {
       display: flex;
@@ -370,9 +370,9 @@ for accomplishing, i feel good when i am doing things on my laptop.
    margin: 5px;
   }
   
-`;function $1(){return I(Rt,{children:ge(N1,{children:[I("img",{src:"./images/face2.jpg",alt:"face"}),I("a",{href:"/",children:I("h1",{children:"Home"})})]})})}const N1=ft.div`
+`;function $1(){return I(Rt,{children:ge(N1,{children:[I("img",{src:"./images/face2.jpg",alt:"face"}),I("a",{href:"/react-tsx/",children:I("h1",{children:"Home"})})]})})}const N1=ft.div`
   min-height: 100vh;
   width: 100%;
   text-align: center;
   background-color: #000000;
-`;vl.createRoot(document.getElementById("root")).render(I(W.StrictMode,{children:I(Rt,{children:I(cm,{children:ge(sm,{children:[I(qs,{exact:!0,path:"/",component:E1}),I(qs,{exact:!0,path:"/contact",component:$1})]})})})}));
+`;vl.createRoot(document.getElementById("root")).render(I(W.StrictMode,{children:I(Rt,{children:I(cm,{children:ge(sm,{children:[I(qs,{exact:!0,path:"/react-tsx",component:E1}),I(qs,{exact:!0,path:"/react-tsx/contact",component:$1})]})})})}));
